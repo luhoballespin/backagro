@@ -1,0 +1,24 @@
+{
+  "name": "gestion-agropecuaria-backend",
+  "version": "1.0.0",
+  "description": "Backend para sistema de gestión agropecuaria",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.12.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "axios": "^1.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+} 

@@ -1,0 +1,21 @@
+# Carpetas y archivos de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env                 # Archivos de entorno (contienen secretos)
+dist/                # Carpeta de salida de builds
+build/               # Otra carpeta de salida de builds
+
+# VS Code
+.vscode/             # Configuración del editor específica del usuario
+*.code-workspace
+.DS_Store            # Archivos de macOS
+Thumbs.db            # Archivos de Windows
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*~
