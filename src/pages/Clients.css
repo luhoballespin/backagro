@@ -1,0 +1,139 @@
+.clients-root {
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo en escritorio */
+  margin: 0 auto; /* Centra el contenido */
+  overflow-x: hidden; /* Oculta cualquier overflow lateral */
+}
+
+.clients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.clients-export-btn {
+  /* Puedes personalizar el botón si lo deseas */
+}
+
+.clients-form {
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  border-radius: 12px;
+  background-color: #fafbfc;
+  box-sizing: border-box;
+}
+
+.clients-table-paper {
+  padding: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.clients-filters {
+  margin-bottom: 16px;
+}
+
+.clients-loading {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.clients-count {
+  margin-bottom: 16px;
+}
+
+.clients-table-container {
+  width: 100%;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* 4. La tabla puede tener muchas columnas, pero nunca debe romper el layout */
+.clients-table-container table {
+  min-width: 900px; /* Ajusta según tus columnas */
+  width: 100%;
+  table-layout: auto;
+}
+
+/* Responsive: móviles */
+@media (max-width: 600px) {
+  .clients-root {
+    padding: 4px;
+    max-width: 100vw;
+  }
+  .clients-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .clients-form {
+    max-width: 100vw;
+    padding: 8px;
+    margin-top: 16px;
+  }
+  .clients-table-paper {
+    padding: 8px;
+    max-width: 100vw;
+  }
+  .clients-filters {
+    margin-bottom: 8px;
+  }
+  .clients-count {
+    margin-bottom: 8px;
+  }
+  .clients-table-container {
+    max-width: 100vw;
+  }
+}
+
+/* Responsive: tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .clients-root {
+    max-width: 98vw;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .clients-form {
+    max-width: 95vw;
+  }
+  .clients-table-paper {
+    max-width: 98vw;
+  }
+  .clients-table-container {
+    max-width: 98vw;
+  }
+}
+
+/* Escritorio: evita desplazamiento lateral */
+@media (min-width: 1025px) {
+  .clients-root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .clients-table-paper {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .clients-table-container {
+    max-width: 100%;
+  }
+}
